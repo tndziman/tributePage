@@ -5,20 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tribute Page</title>
     <style>
-        * {
-            box-sizing: border-box;
+        #main {
+            margin: 50px;
+            padding: 20px;
+            justify-self: center;
+            background-color: gold;
         }
+        h1
+
         #img-div {
+            position: relative;
             text-align: center;
+            background-color: green;
         }
+
 
         #image {
           width: 100%;
           height: auto;
-          max
+          max-width: 625px;
+          margin: 0 auto 0 auto;
+          display: block;
+          border-radius: 50%;
         }
 
         #img-caption {
+            position: absolute;
             background-color: hotpink;
             text-align: justify;
             width: 500px;
@@ -29,7 +41,7 @@
 <body>
     <main id="main">
         <h1 id="title">Linda <a id="tribute-link" href="" target="_blank">"ProKid"</a> Mkhize</h1>
-        <h2>number one Soweto boy</h2>
+        <span><h2>number one Soweto boy</h2> His work influenced other artists</span>
         <div id="img-div">
             <figure>
                 <img id="image" src="https://turntable.kagiso.io/images/WhatsApp_Image_2018-08-09_at_14.28.40.width-800.jpg" alt="picture of ProKid" width="500" height="500">
