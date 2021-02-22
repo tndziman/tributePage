@@ -1,0 +1,99 @@
+/* Variable */
+:root {
+    --primary: #9C6644;
+    --secondary: #7f5539;
+}
+
+/* Reset the default style  */
+li {
+    list-style-type: circle;
+}
+
+body {
+    margin: 50px;
+    padding: 20px;
+    overflow-x: hidden;
+    color: white;
+}
+
+#main {
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 1%;
+}
+
+/* base style  */
+#main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 5px;
+    grid-template-areas: 
+    "title-div"
+    "subtitle-div"
+    "img-div"
+    "tribute-info";
+}
+
+#title-div {
+    grid-area: title-div;
+    background-color: red;
+    grid-column: 1/9;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#title-div a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+
+#subtitle-div {
+    grid-area: subtitle-div;
+    background-color: green;
+    grid-column: 1/9;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#img-div {
+    grid-area: img-div;
+    background-color: blue;
+    grid-column: 1/9;
+    text-align: center;
+}
+
+
+#img-div figure {
+    display: inline-block;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto 0 auto;
+    display: block;
+  }
+
+#img-caption {
+    text-align: justify;
+    width: 400px;
+}
+
+
+#tribute-info {
+    grid-area: tribute-info;
+    width: 100%;
+    background-color: violet;
+    grid-column: 1/9;
+}
+#tribute-info h3 {
+    margin: 5px;
+    text-transform: capitalize;
+}
+/* fonts */
+
