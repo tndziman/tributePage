@@ -1,0 +1,57 @@
+
+#main {
+    margin: 50px;
+    padding: 20px;
+    justify-self: center;
+    background-color: gold;
+}
+
+h1 {
+    position: relative;
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 a {
+    text-transform: capitalize;
+}
+
+#img-div {
+    text-align: center;
+    justify-content: center;
+    background-color: green;
+    padding-top: 30px;
+}
+
+#disc {
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto 0 auto;
+    background-color: blue;
+}
+
+#disc span {
+    position: relative;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: 300px;
+    background-color: gold;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  max-width: 625px;
+  margin: 0 auto 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+#img-caption {
+    background-color: hotpink;
+    text-align: justify;
+    width: 500px;
+}
