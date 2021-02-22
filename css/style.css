@@ -1,7 +1,7 @@
 /* Variable */
 :root {
     --primary: #9C6644;
-    --secondary: #928e8b;
+    --secondary: brown;
 }
 
 /* Reset the default style  */
@@ -17,7 +17,7 @@ body {
 }
 
 #main {
-    background-image: url("https://i.pinimg.com/600x315/2f/20/87/2f2087ee4162322324c6af1ba2ff8d4b.jpg");
+    /* background-image: url("https://i.pinimg.com/600x315/2f/20/87/2f2087ee4162322324c6af1ba2ff8d4b.jpg"); */
     background-color: var(--secondary);
     padding: 10px;
     border-radius: 1%;
@@ -64,12 +64,18 @@ body {
 }
 
 #subtitle-div {
+    position: absolute;
+    top: 235px;
+    left: 205px;
     grid-area: subtitle-div;
-    background-color: green;
+    /* background-image: url("https://i.pinimg.com/600x315/2f/20/87/2f2087ee4162322324c6af1ba2ff8d4b.jpg"); */
+    background-color: inherit;
     grid-column: 1/9;
-    width: 100%;
     text-align: center;
     text-transform: capitalize;
+    border-radius: 15px 25px 0 0;
+    padding: 0 10px;
+    box-shadow: 0 -2px 1px #000;
 }
 
 #img-div {
