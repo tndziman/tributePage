@@ -18,8 +18,7 @@ body {
 
 #main {
     background-color: var(--secondary);
-    padding: 10px;
-    padding-top: 20px;
+    padding: 30px;
     border-radius: 1%;
     box-shadow: 0 0 15px #000;
     display: grid;
@@ -75,7 +74,7 @@ h1 {
 
 #subtitle-div {
     position: absolute;
-    top: 205px;
+    top: 215px;
     left: 220px;
     grid-area: subtitle-div;
     background-color: #281D19;
