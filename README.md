@@ -13,4 +13,4 @@ some practice with plain CSS. I was given a user story to try to fix all issues 
 - Responsive Web Design Projects
 
 
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
