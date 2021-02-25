@@ -11,14 +11,15 @@ li {
 
 body {
     margin: 10px;
-    overflow-x: hidden;
-    background-color: var(--primary);
+    background-color: rgba(92, 63, 55, 0.9);
 }
+
+/* base style  screen less than 630px it will lock at 400px */
 
 #main {
     display: grid;
     margin: auto;
-    width: 650px;
+    min-width: 400px;
     background-color: var(--secondary);
     padding: 30px;
     box-shadow: 0 0 15px var(--secondary);
@@ -30,12 +31,14 @@ body {
     "img-div"
     "tribute-info";
     border-radius: 25px; 
-    justify-items: center;   
+    justify-items: center;
+      
 }
 
 
 #title-div {
     grid-area: title-div;
+    min-width: 350px;
     grid-column: 1/9;
     background-color: var(--primary);
     border-radius: 25px;
@@ -43,10 +46,11 @@ body {
     -moz-box-shadow: inset 0 0 21px var(--secondary);
     box-shadow: inset 0 0 21px var(--secondary);
     padding: 10px 25px 30px 25px;
+    height: auto;
 }
 
-#title {
-    font-size: 3em;
+#title-div #title {
+    font-size: 2.4em;
     font-family: sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -61,10 +65,10 @@ body {
     background-clip: text;
 } 
 
-#pro {
+#title-div #pro {
     text-transform: capitalize;
     font-family:  classmate;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #subtitle-div {
@@ -165,4 +169,146 @@ body {
 @font-face {
     font-family:  classmate;
     src: url("../fonts/ClassmatesDemoRegular.ttf");
+}
+
+@media screen and (max-width: 630px) {
+    #main {
+        width: 600px;
+    }
+
+    #title-div {
+       width: 500px;
+    }
+    #title-div #title {
+        font-size: 2.5em;
+    }
+
+    #subtitle-div {
+        width: 450px;
+        font-size: 14px;
+        top: -43px;
+    }
+
+    #img-div {
+        width: 530px;
+        height: 520px;
+    }
+
+    #img-caption {
+        font-size: 15px;
+        width: 350px;
+        height: 80px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    #tribute-info {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    #main {
+        width: 600px;
+
+    }
+
+    #title-div {
+       width: 500px;
+    }
+
+    #title-div #title {
+        font-size: 2.5em;
+    }
+
+    #subtitle-div {
+        width: 450px;
+        font-size: 14px;
+        top: -43px;
+    }
+
+    #img-div {
+        width: 530px;
+        height: 520px;
+    }
+
+    #img-caption {
+        font-size: 15px;
+        width: 350px;
+        height: 80px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    #tribute-info {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    #main {
+        width: 800px;
+    }
+    #title-div {
+        width: 700px;
+     }
+
+     #title-div #title {
+        font-size: 3.5em;
+    }
+
+    #subtitle-div {
+        width: 600px;
+        font-size: 16.5px;
+        top: -50px;
+    }
+
+    #img-div {
+        width: 730px;
+        height: 650px;
+    }
+
+    #img-caption {
+        font-size: 16px;
+        width: 440px;
+        height: 80px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    #tribute-info {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 5120px) {
+    #main {
+        width: 1000px;
+    }
+    #title-div {
+        width: 900px;
+     }
+
+     #title-div #title {
+        font-size: 4.5em;
+    }
+
+    #subtitle-div {
+        width: 750px;
+        font-size: 19px;
+        top: -57px;
+    }
+
+    #img-div {
+        width: 930px;
+        height: 650px;
+    }
+
+    #img-caption {
+        font-size: 16px;
+        width: 440px;
+        height: 80px;
+        padding: 5px 12px 5px 12px;
+    }
+
+    #tribute-info {
+        font-size: 16px;
+    }
 }
